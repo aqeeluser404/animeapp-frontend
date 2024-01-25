@@ -44,7 +44,9 @@
         gap: 1rem;
     }
     .button {
-        border-radius: 10px;
+        border-radius: 15px;
+        padding: 0.3rem;
+        border: none;
     }
     .button:hover {
         background-color: black;
