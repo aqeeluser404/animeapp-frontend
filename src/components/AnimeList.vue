@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <h1 class="text-center">Anime List</h1>
+        <hr>
         <table class="table table-striped">
             <thead>
                 <th class="table-head-text"> ID </th>
@@ -22,6 +23,7 @@
                 </tr>
             </tbody>
         </table>
+        <hr>
     </div>
 </template>
 
