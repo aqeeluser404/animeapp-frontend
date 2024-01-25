@@ -31,7 +31,16 @@
                 this.$router.push('/anime-list');
             },
             AddAnime() {
-
+                this.$router.push('/development-page');
+            },
+            ReadAnime() {
+                this.$router.push('/development-page');
+            },
+            UpdateAnime() {
+                this.$router.push('/development-page');
+            },
+            DeleteAnime() {
+                this.$router.push('/development-page');
             },
         }
     }
@@ -45,7 +54,7 @@
     }
     .button {
         border-radius: 15px;
-        padding: 0.3rem;
+        padding: 0.5rem;
         border: none;
     }
     .button:hover {
