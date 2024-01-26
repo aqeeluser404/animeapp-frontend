@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <picture>
+            <img class="single-row-image" src="../assets/weeb.png" alt="weeb-logo" width="300px">
+        </picture>
         <h1>Welcome</h1>
         <p>
             The web application was created solely to showcase CRUD operations.
@@ -47,5 +50,4 @@
 </script>
 
 <style scoped>
-
 </style>

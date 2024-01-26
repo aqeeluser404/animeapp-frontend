@@ -30,7 +30,13 @@ const routes = [
         name: 'ReadAnime',
         component : ReadAnime,
         path : '/read-anime'
-    }
+    },
+    {
+        path: '/read-anime/:id',
+        name: 'ReadAnimeWithModal',
+        component: ReadAnime,
+        props: (route) => ({ showModal: route.query.showModal }),
+      },
 ];
 
 const router = createRouter({

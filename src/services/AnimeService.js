@@ -16,7 +16,7 @@ class AnimeService {
     }
 
     getAnimeById(animeId) {
-        return axios.get(`${ANIME_API_BASE_URL}/${animeId}`)
+        return axios.get(`${ANIME_API_BASE_URL}/read/${animeId}`)
             .then(response => {
                 console.log('Anime by ID:', response.data);
                 return response;
