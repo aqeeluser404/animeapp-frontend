@@ -1,25 +1,25 @@
 <template>
     <div class="container">
-        <h1 class="text-center">Anime List</h1>
+        <h1>Anime List</h1>
         <hr>
         <table class="table table-striped">
             <thead>
-                <th class="table-head-text"> ID </th>
+                <!-- <th class="table-head-text"> ID </th> -->
                 <th class="table-head-text"> TITLE </th>
-                <th class="table-head-text"> GENRE </th>
+                <!-- <th class="table-head-text"> GENRE </th>
                 <th class="table-head-text"> EPISODE COUNT </th>
-                <th class="table-head-text"> STATUS </th>
-                <th class="table-head-text"> ANIME RATING </th>
+                <th class="table-head-text"> STATUS </th> -->
+                <!-- <th class="table-head-text"> ANIME RATING </th> -->
             </thead>
             <tbody>
                 <!-- v-for iterates array of object variables -->
                 <tr v-for = "anime in animes" v-bind:key="anime.id">
-                    <td class="table-definition-text"> {{ anime.id }} </td>
+                    <!-- <td class="table-definition-text"> {{ anime.id }} </td> -->
                     <td class="table-definition-text"> {{ anime.title }} </td>
-                    <td class="table-definition-text"> {{ anime.genre }} </td>
+                    <!-- <td class="table-definition-text"> {{ anime.genre }} </td>
                     <td class="table-definition-text"> {{ anime.episodeCount }} </td>
-                    <td class="table-definition-text"> {{ anime.status }} </td>
-                    <td class="table-definition-text"> {{ anime.rating }} </td>
+                    <td class="table-definition-text"> {{ anime.status }} </td> -->
+                    <!-- <td class="table-definition-text"> {{ anime.rating }} </td> -->
                 </tr>
             </tbody>
         </table>
@@ -35,6 +35,7 @@ import AnimeService from '../services/AnimeService'
 
     export default {
         name: 'AnimeList',
+
         data() {
             return {
                 animes : []
@@ -81,7 +82,7 @@ import AnimeService from '../services/AnimeService'
         text-align: left;
     }
     .container {
-        width: 100%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         gap: 1rem;

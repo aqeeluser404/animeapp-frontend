@@ -8,13 +8,13 @@
             <br> 
             utilizing the Spring Boot framework.
         </p>
-        <div class="button-row">
+        <!-- <div class="button-row">
             <button class="button" @click="AnimeList">View Anime List</button>
-        </div>
+        </div> -->
         <hr>
         <div class="button-row">
-            <button class="button" @click="AddAnime">Create Anime</button>
-            <button class="button" @click="ReadAnime">Read Anime</button>
+            <button class="button" @click="CreateAnime">Create Anime</button>
+            <button class="button" @click="ReadAnime">View Anime List</button>
             <button class="button" @click="UpdateAnime">Update Anime</button>
             <button class="button" @click="DeleteAnime">Delete Anime</button>
         </div>
@@ -30,11 +30,11 @@
             AnimeList() {
                 this.$router.push('/anime-list');
             },
-            AddAnime() {
-                this.$router.push('/development-page');
+            CreateAnime() {
+                this.$router.push('/create-anime');
             },
             ReadAnime() {
-                this.$router.push('/development-page');
+                this.$router.push('/read-anime');
             },
             UpdateAnime() {
                 this.$router.push('/development-page');
@@ -47,24 +47,5 @@
 </script>
 
 <style scoped>
-    .button-row {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .button {
-        border-radius: 15px;
-        padding: 0.5rem;
-        border: none;
-    }
-    .button:hover {
-        background-color: black;
-        color: white;
-    }
-    .container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+
 </style>
