@@ -1,8 +1,11 @@
 import HomePage from './components/HomePage.vue'
-import AnimeList from './components/AnimeList.vue'
 import DevelopmentPage from './components/DevelopmentPage.vue'
+
+
 import CreateAnime from './components/CreateAnime.vue'
-import ReadAnime from './components/ReadAnime.vue'
+import ViewAnime from './components/ViewAnime.vue'
+import AnimeDetails from './components/AnimeDetails.vue';
+
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -10,11 +13,6 @@ const routes = [
         name : 'HomePage',
         component : HomePage,
         path : '/'
-    },
-    {
-        name : 'AnimeList',
-        component : AnimeList,
-        path : '/anime-list'
     },
     {
         name : 'DevelopmentPage',
@@ -27,16 +25,15 @@ const routes = [
         path : '/create-anime' 
     },
     {
-        name: 'ReadAnime',
-        component : ReadAnime,
-        path : '/read-anime'
+        name: 'ViewAnime',
+        component : ViewAnime,
+        path : '/view-anime'
     },
     {
-        path: '/read-anime/:id',
-        name: 'ReadAnimeWithModal',
-        component: ReadAnime,
-        props: (route) => ({ showModal: route.query.showModal }),
-      },
+        name: 'AnimeDetails',
+        path: '/anime/:id',
+        component: AnimeDetails,
+    },
 ];
 
 const router = createRouter({

@@ -19,7 +19,7 @@ class AnimeService {
         return axios.get(`${ANIME_API_BASE_URL}/read/${animeId}`)
             .then(response => {
                 console.log('Anime by ID:', response.data);
-                return response;
+                return response.data;
             })
             .catch(error => {
                 console.error('Error fetching anime by ID:', error);
@@ -31,7 +31,7 @@ class AnimeService {
         return axios.post(`${ANIME_API_BASE_URL}/create`, animeData)
             .then(response => {
                 console.log('Created Anime:', response.data);
-                return response;
+                return response.data;
             })
             .catch(error => {
                 console.error('Error creating anime:', error);
@@ -43,7 +43,7 @@ class AnimeService {
         return axios.put(`${ANIME_API_BASE_URL}/update/${animeId}`, animeData)
             .then(response => {
                 console.log('Updated Anime:', response.data);
-                return response;
+                return response.data;
             })
             .catch(error => {
                 console.error('Error updating anime:', error);
@@ -55,7 +55,7 @@ class AnimeService {
         return axios.delete(`${ANIME_API_BASE_URL}/delete/${animeId}`)
             .then(response => {
                 console.log('Deleted Anime:', response.data);
-                return response;
+                return response.data;
             })
             .catch(error => {
                 console.error('Error deleting anime:', error);

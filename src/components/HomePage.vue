@@ -30,14 +30,11 @@
         name:'HomePage',
 
         methods: {
-            AnimeList() {
-                this.$router.push('/anime-list');
-            },
             CreateAnime() {
                 this.$router.push('/create-anime');
             },
             ReadAnime() {
-                this.$router.push('/read-anime');
+                this.$router.push('/view-anime');
             },
             UpdateAnime() {
                 this.$router.push('/development-page');
