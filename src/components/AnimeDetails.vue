@@ -5,27 +5,26 @@
       <hr>
       <table class="table">
         <tbody>
-        <tr>
-            <th class="table-definition-text">Full Name:</th>
-            <td class="table-definition-text">{{ anime.title }}</td>
-        </tr>
-        <tr>
-            <th class="table-definition-text">Episode Count:</th>
-            <td class="table-definition-text">{{ anime.episodeCount }}</td>
-        </tr>
-        <tr>
-            <th class="table-definition-text">Genre:</th>
-            <td class="table-definition-text">{{ anime.genre }}</td>
-        </tr>
-        <tr>
-            <th class="table-definition-text">Status:</th>
-            <td class="table-definition-text">{{ anime.status }}</td>
-        </tr>
-        <tr>
-            <th class="table-definition-text">Rating:</th>
-            <td class="table-definition-text">{{ anime.rating }}</td>
-        </tr>
-
+            <tr>
+                <th class="table-definition-text">Full Name:</th>
+                <td class="table-definition-text">{{ anime.title }}</td>
+            </tr>
+            <tr>
+                <th class="table-definition-text">Episode Count:</th>
+                <td class="table-definition-text">{{ anime.episodeCount }}</td>
+            </tr>
+            <tr>
+                <th class="table-definition-text">Genre:</th>
+                <td class="table-definition-text">{{ anime.genre }}</td>
+            </tr>
+            <tr>
+                <th class="table-definition-text">Status:</th>
+                <td class="table-definition-text">{{ anime.status }}</td>
+            </tr>
+            <tr>
+                <th class="table-definition-text">Rating:</th>
+                <td class="table-definition-text">{{ anime.rating }}</td>
+            </tr>
         </tbody>
       </table>
       <hr>

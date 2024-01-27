@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <h1>Read Anime</h1>
+      <h1>Anime List</h1>
       <p>Choose and click on an anime name to view its details.</p>
       <hr>
       <table class="table">
@@ -11,13 +11,18 @@
           <tr v-for="anime in animes" :key="anime.id">
             <td class="table-definition-text">
               <button class="anime-details-button" @click="showDetails(anime.id)">{{ anime.title }}</button>
+              <div class="button-row">
+                <button class="button button-inside-row" @click="DeleteAnime">Delete Anime</button>
+                <button class="button button-inside-row" @click="UpdateAnime">Update Anime</button>
+              </div>
             </td>
           </tr>
         </tbody>
       </table>
       <hr>
       <div class="button-row">
-        <button class="button button-background" @click="HomePage">Go Home</button>
+        <button class="button" @click="CreateAnime">Create Anime</button>
+        <button class="button" @click="GoBack">Back</button>
       </div>
     </div>
   </template>
@@ -41,9 +46,19 @@
       showDetails(animeId) {
         this.$router.push(`/anime/${animeId}`);
       },
-      HomePage() {
+      CreateAnime() {
+        this.$router.push('/create-anime');
+      },
+      UpdateAnime() {
+        this.$router.push('/development-page');
+      },
+      GoBack() {
         this.$router.push('/');
       },
+      DeleteAnime() {
+        this.$router.push('/development-page');
+      },
+
     },
     created() {
       this.getAnimeList();
@@ -71,11 +86,18 @@
       border: none;
       background: none;
     }
+    .button-inside-row {
+      background: rgb(240, 240, 240);
+      color: black;
+    }
+    .button-inside-row:hover {
+      background: rgb(167, 167, 167);
+    }
     p {
       margin-bottom: 0;
     }
     .container {
-        width: 25%;
+        width: 50%;
         display: flex;
         flex-direction: column;
     }

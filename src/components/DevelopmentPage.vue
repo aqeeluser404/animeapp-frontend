@@ -4,7 +4,7 @@
         <p>Page is still under development, please try again later.</p>
         <hr>
         <div class="button-row">
-            <button class="button" @click="HomePage">Go Home</button>
+            <button class="button" @click="GoBack">Back</button>
         </div>
     </div>
 </template>
@@ -14,28 +14,14 @@
         name : "DevelopmentPage",
 
         methods: {
-            HomePage() {
-                this.$router.push('/');
+            GoBack() {
+                this.$router.push('/view-anime');
             }
         }
     }
 </script>
 
 <style scoped>
-    .button-row {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .button {
-        border-radius: 15px;
-        padding: 0.5rem;
-        border: none;
-    }
-    .button:hover {
-        background-color: black;
-        color: white;
-    }
     .container {
         width: 100%;
         display: flex;

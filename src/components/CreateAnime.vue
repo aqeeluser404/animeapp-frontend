@@ -26,8 +26,8 @@
                 </div>
                 <hr>
                 <div class="button-row">
-                    <button class="button" @click="HomePage">Go Home</button>
                     <button class="button" type="submit">Create Anime</button>
+                    <button class="button" @click="GoBack">Back</button>
                 </div>
             </form>
         </div>
@@ -63,8 +63,8 @@ import AnimeService from '@/services/AnimeService';
                     console.error('Error creating anime:', error);
                 })
             },
-            HomePage() {
-                this.$router.push('/')
+            GoBack() {
+                this.$router.push('/view-anime')
             }
         },
 

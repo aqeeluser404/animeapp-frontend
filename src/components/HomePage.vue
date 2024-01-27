@@ -11,15 +11,9 @@
             <br> 
             utilizing the Spring Boot framework.
         </p>
-        <!-- <div class="button-row">
-            <button class="button" @click="AnimeList">View Anime List</button>
-        </div> -->
         <hr>
         <div class="button-row">
-            <button class="button" @click="CreateAnime">Create Anime</button>
-            <button class="button" @click="ReadAnime">View Anime List</button>
-            <button class="button" @click="UpdateAnime">Update Anime</button>
-            <button class="button" @click="DeleteAnime">Delete Anime</button>
+            <button class="button" @click="ViewAnime">View Anime List</button>
         </div>
         <hr>
     </div>
@@ -30,17 +24,8 @@
         name:'HomePage',
 
         methods: {
-            CreateAnime() {
-                this.$router.push('/create-anime');
-            },
-            ReadAnime() {
+            ViewAnime() {
                 this.$router.push('/view-anime');
-            },
-            UpdateAnime() {
-                this.$router.push('/development-page');
-            },
-            DeleteAnime() {
-                this.$router.push('/development-page');
             },
         }
     }
