@@ -29,7 +29,8 @@
       </table>
       <hr>
       <div class="button-row">
-        <button class="button button-background" @click="HomePage">View All Anime</button>
+        <button class="button button-inside-row" @click="UpdateAnime">Update Details</button>
+        <button class="button button-background" @click="GoBack">Back</button>
       </div>
     </div>
   </template>
@@ -45,7 +46,10 @@
             };
         },
         methods: {
-            HomePage() {
+            UpdateAnime() {
+                this.$router.push('/development-page');
+            },
+            GoBack() {
                 this.$router.push('/view-anime');
             },
         },
@@ -63,12 +67,9 @@
 </script>
   
 <style scoped>
-
     .table-definition-text {
         text-align: left;
         font-size: 0.8rem;
-        /* display: flex;
-        justify-content: space-between; */
         align-items: center;
     }
     .container {

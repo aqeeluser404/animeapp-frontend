@@ -13,7 +13,7 @@
               <button class="anime-details-button" @click="showDetails(anime.id)">{{ anime.title }}</button>
               <div class="button-row">
                 <button class="button button-inside-row" @click="DeleteAnime">Delete Anime</button>
-                <button class="button button-inside-row" @click="UpdateAnime">Update Anime</button>
+                <!-- <button class="button button-inside-row" @click="UpdateAnime">Update Anime</button> -->
               </div>
             </td>
           </tr>
@@ -49,16 +49,12 @@
       CreateAnime() {
         this.$router.push('/create-anime');
       },
-      UpdateAnime() {
+      DeleteAnime() {
         this.$router.push('/development-page');
       },
       GoBack() {
         this.$router.push('/');
       },
-      DeleteAnime() {
-        this.$router.push('/development-page');
-      },
-
     },
     created() {
       this.getAnimeList();
