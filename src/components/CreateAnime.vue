@@ -57,7 +57,7 @@ import AnimeService from '@/services/AnimeService';
                 
                 .then(response => {
                     console.log('Created Anime:', response.data);
-                    this.$router.push('/')
+                    this.$router.push('/view-anime')
                 })
                 .catch(error => {
                     console.error('Error creating anime:', error);

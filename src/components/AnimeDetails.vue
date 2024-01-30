@@ -47,7 +47,8 @@
         },
         methods: {
             UpdateAnime() {
-                this.$router.push('/development-page');
+                const animeId = this.$route.params.id; 
+                this.$router.push({ name: 'UpdateAnime', params: { animeId } });
             },
             GoBack() {
                 this.$router.push('/view-anime');

@@ -40,17 +40,19 @@ class AnimeService {
     }
 
     updateAnime(animeId, animeData) {
-        return axios.put(`${ANIME_API_BASE_URL}/update/${animeId}`, animeData)
-            .then(response => {
-                console.log('Updated Anime:', response.data);
-                return response.data;
-            })
-            .catch(error => {
-                console.error('Error updating anime:', error);
-                throw error;
-            });
+        animeData.animeId = animeId;
+      
+        return axios.put(`${ANIME_API_BASE_URL}/update`, animeData)
+          .then(response => {
+            console.log('Updated Anime:', response.data);
+            return response.data;
+          })
+          .catch(error => {
+            console.error('Error updating anime:', error);
+            throw error;
+          });
     }
-
+    
     deleteAnime(animeId) {
         return axios.delete(`${ANIME_API_BASE_URL}/delete/${animeId}`)
             .then(response => {
