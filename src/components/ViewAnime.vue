@@ -12,9 +12,7 @@
             <td class="table-definition-text">
               <button class="anime-details-button" @click="showDetails(anime.id)">{{ anime.title }}</button>
               <div class="button-row">
-                <button class="button button-inside-row" @click="DeleteAnime(anime.id)">Delete Anime</button>
-                <!-- <button class="button button-inside-row" @click="UpdateAnime">Update Anime</button> -->
-              </div>
+                <button class="button button-inside-row" @click="DeleteAnime(anime.id)">Delete Anime</button>              </div>
             </td>
           </tr>
         </tbody>

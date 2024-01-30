@@ -1,6 +1,4 @@
 import HomePage from './components/HomePage.vue'
-import DevelopmentPage from './components/DevelopmentPage.vue'
-
 
 import CreateAnime from './components/CreateAnime.vue'
 import ViewAnime from './components/ViewAnime.vue'
@@ -13,11 +11,6 @@ const routes = [
         name : 'HomePage',
         component : HomePage,
         path : '/'
-    },
-    {
-        name : 'DevelopmentPage',
-        component : DevelopmentPage,
-        path : '/development-page'
     },
     {
         name : 'CreateAnime',
