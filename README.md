@@ -1,5 +1,10 @@
 # animeapp-frontend
 
+## Backend application
+```
+https://github.com/aqeeluser404/AnimeAppBackend
+```
+
 ## Project setup
 ```
 npm install
